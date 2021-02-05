@@ -25,8 +25,8 @@ The illustration below documents the settings that I used to create the .Net Web
 ![ACS]({{site.baseurl}}/assets/Blogs/ACSIntegration/CreateApp.png)
 
 We also need to add nuget packages to support the project:
-•	Install-Package Azure.Communication.Common -Version 1.0.0-beta.3
-•	Install-Package Azure.Communication.Administration -Version 1.0.0-beta.3
+- Install-Package Azure.Communication.Common -Version 1.0.0-beta.3
+- Install-Package Azure.Communication.Administration -Version 1.0.0-beta.3
 
 ## Authentication
 ACS allows you to create identities and manage your access tokens.  The identities created do not contain any PII data so you would typically map that identity as a property of your application’s identity solution.  For a real “quick start” there is a nice sample that implements this in an Azure function.  We will go ahead and implement it as part of our solution so we will need a web API to do this. 
@@ -41,6 +41,8 @@ The returned tokenResponse will have a structure like:
     "User": "[the ACS User]",
     "ExpiresOn": "2021-01-08T03:40:02.5492449+00:00"
     }
+
+![ACS]({{site.baseurl}}/assets/Blogs/ACSIntegration/ACSBlog (7).png)
 
 
 ## Front End Code
