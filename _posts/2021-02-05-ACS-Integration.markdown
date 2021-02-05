@@ -55,6 +55,8 @@ Sorry if you were expecting a super glamorous presentation layer!  I reduced thi
 ## Getting Started with the Code
 In the code block below, there are a few notables:
 
+![ACS]({{site.baseurl}}/assets/Blogs/ACSIntegration/ACSBlog (8).png)
+
 ## Joining the Call
 The code block below highlights video options:
 
