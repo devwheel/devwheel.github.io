@@ -31,9 +31,9 @@ The returned tokenResponse will have a structure like:
 
 
     {
-    "//Token"//: "[The Token]",
+    "Token": "[The Token]",
     "User": "[the ACS User]",
-    "ExpiresOn": "2021-01-08T03:40:02.5492449+00:00"
+    "//ExpiresOn"//: "2021-01-08T03:40:02.5492449+00:00"
     }
 
 
