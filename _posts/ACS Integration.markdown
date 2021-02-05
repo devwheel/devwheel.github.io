@@ -23,8 +23,21 @@ Once you create the service, you will minimally need to setup your usage keys (p
 ## Now the Code
 
 ## Authentication
+ACS allows you to create identities and manage your access tokens.  The identities created do not contain any PII data so you would typically map that identity as a property of your application’s identity solution.  For a real “quick start” there is a nice sample that implements this in an Azure function.  We will go ahead and implement it as part of our solution so we will need a web API to do this. 
+I’m going to create 2 APIs for this.  Below is the 2 APIs that I created for token management.  
+•	The first API creates the user and gets a token for that new user.  
+•	The second API refreshes a token for a user that has an identity.
+The returned tokenResponse will have a structure like:
 
+```
+{
+  "Token": "[The Token]",
+  "User": "[the ACS User]",
+  "ExpiresOn": "2021-01-08T03:40:02.5492449+00:00"
+}
+```
 ## Front End Code
+Sorry if you were expecting a super glamorous presentation layer!  I reduced this to the bare mimimum so you can easily follow the flows to better understand the APIs.  I will also include some of my findings about utilizing the JavaScript SDK in this section.  Below is an image of the running code.
 
 ## Getting Started with the Code
 In the code block below, there are a few notables:
