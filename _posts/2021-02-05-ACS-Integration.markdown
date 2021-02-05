@@ -42,7 +42,7 @@ The returned tokenResponse will have a structure like:
     "ExpiresOn": "2021-01-08T03:40:02.5492449+00:00"
     }
 
-![ACS]({{site.baseurl}}/assets/Blogs/ACSIntegration/ACSBlog (7).png)
+![ACS]({{site.baseurl}}/assets/Blogs/ACSIntegration/Auth.png)
 
 
 ## Front End Code
