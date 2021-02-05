@@ -50,6 +50,8 @@ You would typically map the User property to your applications identity system.
 ## Front End Code
 Sorry if you were expecting a super glamorous presentation layer!  I reduced this to the bare mimimum so you can easily follow the flows to better understand the APIs.  I will also include some of my findings about utilizing the JavaScript SDK in this section.  Below is an image of the running code.
 
+![ACS]({{site.baseurl}}/assets/Blogs/ACSIntegration/AppView.png)
+
 ## Getting Started with the Code
 In the code block below, there are a few notables:
 
