@@ -42,6 +42,8 @@ The returned tokenResponse will have a structure like:
     "ExpiresOn": "2021-01-08T03:40:02.5492449+00:00"
     }
 
+You would typically map the User property to your applications identity system.
+
 ![ACS]({{site.baseurl}}/assets/Blogs/ACSIntegration/Auth.png)
 
 
