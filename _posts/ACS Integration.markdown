@@ -34,6 +34,14 @@ Once you create the service, you will minimally need to setup your usage keys (p
 
 ## Bundling
 
+## Visual Studio Extensions
+I installed a couple of extensions for Visual Studio 2019:
+1.	Open Command Line
+2.	NPM Task Runner
+
+Now – I open a developer command prompt using the Open Command Line extension
+
+
 We now need to run a few commands to get the SDK and setup up the project for bundling the final JS file, which I’ll call bundle.js.
 - npm install (creates the package.lock.json file) 
 - npm init -y (creates the package.json)
