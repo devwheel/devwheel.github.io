@@ -60,6 +60,8 @@ In the code block below, there are a few notables:
 ## Joining the Call
 The code block below highlights video options:
 
+![ACS]({{site.baseurl}}/assets/Blogs/ACSIntegration/ACSBlog (1).png)
+
 ## Turning Video On and Off
 The snippet below walks you through toggling your local video once in the call.
 
