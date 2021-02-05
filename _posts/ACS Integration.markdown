@@ -26,11 +26,14 @@ Once you create the service, you will minimally need to setup your usage keys (p
 
 ## Front End Code
 
-## Getting Started with the code
+## Getting Started with the Code
+In the code block below, there are a few notables:
 
 ## Joining the Call
+The code block below highlights video options:
 
 ## Turning Video On and Off
+The snippet below walks you through toggling your local video once in the call.
 
 ## Bundling
 The hardest part of this for me was bundling.  The JavaScript SDK is distributed as node modules.  This is great for the dev that lives in VS Code and talks about things like Grunt, Webpack, Node, TypeScript etc.. (you know, all the cool kid stuff).  My skills are not there yet.  So I had to figure out how to get a bundled javascript file put together that combines my “video” script with the SDK.  Here is how I achieved it. 
