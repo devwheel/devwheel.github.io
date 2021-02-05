@@ -29,9 +29,9 @@ I’m going to create 2 APIs for this.  Below is the 2 APIs that I created for t
 •	The second API refreshes a token for a user that has an identity.
 The returned tokenResponse will have a structure like:
 
-```javascript
+```
 {
-  "Token": \\"[The Token]\\",
+  "Token": "[The Token]",
   "User": "[the ACS User]",
   "ExpiresOn": "2021-01-08T03:40:02.5492449+00:00"
 }
