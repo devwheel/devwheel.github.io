@@ -29,7 +29,7 @@ We also need to add nuget packages to support the project:
 - Install-Package Azure.Communication.Administration -Version 1.0.0-beta.3
 
 ## Authentication
-ACS allows you to create identities and manage your access tokens.  The identities created do not contain any PII data so you would typically map that identity as a property of your application’s identity solution.  For a real “quick start” there is a nice sample that implements this in an Azure function.  We will go ahead and implement it as part of our solution so we will need a web API to do this. 
+ACS allows you to create identities and manage your access tokens.  The identities created do not contain any PII data so you would typically map that identity as a property of your application’s identity solution.  For a real “quick start” there is a nice [sample](https://docs.microsoft.com/en-us/azure/communication-services/tutorials/trusted-service-tutorial) that implements this in an Azure function.  We will go ahead and implement it as part of our solution so we will need a web API to do this. 
 I’m going to create 2 APIs for this.  Below is the 2 APIs that I created for token management.  
 •	The first API creates the user and gets a token for that new user.  
 •	The second API refreshes a token for a user that has an identity.
