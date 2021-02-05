@@ -33,8 +33,8 @@ Once you create the service, you will minimally need to setup your usage keys (p
 ## Turning Video On and Off
 
 ## Bundling
-
-## Visual Studio Extensions
+The hardest part of this for me was bundling.  The JavaScript SDK is distributed as node modules.  This is great for the dev that lives in VS Code and talks about things like Grunt, Webpack, Node, TypeScript etc.. (you know, all the cool kid stuff).  My skills are not there yet.  So I had to figure out how to get a bundled javascript file put together that combines my “video” script with the SDK.  Here is how I achieved it. 
+### Visual Studio Extensions
 I installed a couple of extensions for Visual Studio 2019:
 1.	Open Command Line
 2.	NPM Task Runner
@@ -65,7 +65,7 @@ My code for the video is in the “entry” setting (Index.js).  The output bund
 Run the following command:  npx webpack-cli --config ./webpack.config.js –debug
 You can now go look at the resulting bundle in your output directory.  You would need to then add this bundle to your project.  
 
-## Automating the Bundle
+### Automating the Bundle
 Dropping to a command prompt every time you make a change to your index.js file would be painful.  Therefore, we will leverage the NPM Task Runner extension.  I created a before build task as shown below.
 
 ## Summary
