@@ -29,13 +29,14 @@ I’m going to create 2 APIs for this.  Below is the 2 APIs that I created for t
 •	The second API refreshes a token for a user that has an identity.
 The returned tokenResponse will have a structure like:
 
-```
-{
-  "Token": "[The Token]",
-  "User": "[the ACS User]",
-  "ExpiresOn": "2021-01-08T03:40:02.5492449+00:00"
-}
-```
+
+    {
+    "Token": "[The Token]",
+    "User": "[the ACS User]",
+    "ExpiresOn": "2021-01-08T03:40:02.5492449+00:00"
+    }
+
+
 ## Front End Code
 Sorry if you were expecting a super glamorous presentation layer!  I reduced this to the bare mimimum so you can easily follow the flows to better understand the APIs.  I will also include some of my findings about utilizing the JavaScript SDK in this section.  Below is an image of the running code.
 
