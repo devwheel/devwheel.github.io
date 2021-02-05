@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Integrating Video into your Applications with Azure Communication Services
+title: Adding Video to your Application with ACS for the .NET Developer using ACS
 date: '2021-2-4 21:03:36 +0530'
 categories: ACS ASP.NET
 published: true
