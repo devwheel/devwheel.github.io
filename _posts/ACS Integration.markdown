@@ -14,7 +14,6 @@ Fast forward to 2021.  Microsoft announced a new service: .  Azure Communication
 
 In this article we’ll focus on the video calling service and walk you through the key APIs needed to add voice/video to your applications using JavaScript.  If you’re a hard core TypeScript/React coder this article isn’t for you. You can jump to the SDK samples at Azure Communication Services - Samples.   I felt the need to publish this article to bridge the gap that I faced as a traditional .Net developer.  It seems everything at Microsoftis leveraging the React framework for front end development.  Although its an elegant framework, it creates a lot of noise when you’re trying to understand the ACS API when you’re not a TypeScript/React native.
 ## Getting Started
-
 The first thing you will need to do is spin up an ACS instance in Azure.
 
 ![ACS]({{site.baseurl}}/_posts/WINWORD_jfneGFB6zs.png)
@@ -35,7 +34,31 @@ Once you create the service, you will minimally need to setup your usage keys (p
 
 ## Bundling
 
+We now need to run a few commands to get the SDK and setup up the project for bundling the final JS file, which I’ll call bundle.js.
+- npm install (creates the package.lock.json file) 
+- npm init -y (creates the package.json)
+- npm install --global webpack@4.32.2  (I seemed to have to do a global install of the webpack tools)
+- npm install --global webpack-cli@3.3.2 
+- npm install --global webpack-dev-server@3.5.1
+- npm install webpack@4.32.2 --save-dev (These commands will add dependencies in the config file)
+- npm install webpack-cli@3.3.2 --save-dev
+- npm install webpack-dev-server@3.5.1 --save-dev
+- npm install @azure/communication-common –save (Add the ACS JS SDKs and creates dependencies)
+- npm install @azure/communication-calling –save
+
+At this point we should have the ACS SDK and the Webpack tooling installed into our project and a couple of files that we would typically had to our project; the package.lock.json and the package.json files.  We will need to change the main entry from whatever is created to webpack.config.js
+
+
+Create a webpack.config.js file in your project root.  This is where we configure our bundling.
+
+I have modified my webpack.config.js to read:  
+
+My code for the video is in the “entry” setting (Index.js).  The output bundle will be in the Bundle.js file.  You should now be ready to create your first bundle.  
+Run the following command:  npx webpack-cli --config ./webpack.config.js –debug
+You can now go look at the resulting bundle in your output directory.  You would need to then add this bundle to your project.  
+
 ## Automating the Bundle
+Dropping to a command prompt every time you make a change to your index.js file would be painful.  Therefore, we will leverage the NPM Task Runner extension.  I created a before build task as shown below.
 
 ## Summary
 I know there is a lot of information in this article, and probably a few inaccuracies but the goal was to highlight the ability to add video calling to an application and get the SDK working in a ASP.Net Web Application.  I have also put the code that I used in this example in a Github Repo.
