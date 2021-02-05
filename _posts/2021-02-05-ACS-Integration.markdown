@@ -114,4 +114,4 @@ Dropping to a command prompt every time you make a change to your index.js file 
 ![ACS]({{site.baseurl}}/assets/Blogs/ACSIntegration/ACSBlog (6).png)
 
 ## Summary
-I know there is a lot of information in this article, and probably a few inaccuracies but the goal was to highlight the ability to add video calling to an application and get the SDK working in a ASP.Net Web Application.  I have also put the code that I used in this example in a Github Repo.
+I know there is a lot of information in this article, and probably a few inaccuracies but the goal was to highlight the ability to add video calling to an application and get the SDK working in a ASP.Net Web Application.  I have also put the code that I used in this example in a [Github Repo](https://github.com/devwheel/RemoteAdvisor "Code Sample").
