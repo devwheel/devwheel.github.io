@@ -66,8 +66,11 @@ The code block below highlights video options:
 ## Turning Video On and Off
 The snippet below walks you through toggling your local video once in the call.
 
+![ACS]({{site.baseurl}}/assets/Blogs/ACSIntegration/ACSBlog (7).png)
+
 ## Bundling
 The hardest part of this for me was bundling.  The JavaScript SDK is distributed as node modules.  This is great for the dev that lives in VS Code and talks about things like Grunt, Webpack, Node, TypeScript etc.. (you know, all the cool kid stuff).  My skills are not there yet.  So I had to figure out how to get a bundled javascript file put together that combines my “video” script with the SDK.  Here is how I achieved it. 
+
 ### Visual Studio Extensions
 I installed a couple of extensions for Visual Studio 2019:
 1.	Open Command Line
@@ -75,6 +78,7 @@ I installed a couple of extensions for Visual Studio 2019:
 
 Now – I open a developer command prompt using the Open Command Line extension
 
+![ACS]({{site.baseurl}}/assets/Blogs/ACSIntegration/ACSBlog (4).png)
 
 We now need to run a few commands to get the SDK and setup up the project for bundling the final JS file, which I’ll call bundle.js.
 - npm install (creates the package.lock.json file) 
@@ -90,10 +94,15 @@ We now need to run a few commands to get the SDK and setup up the project for bu
 
 At this point we should have the ACS SDK and the Webpack tooling installed into our project and a couple of files that we would typically had to our project; the package.lock.json and the package.json files.  We will need to change the main entry from whatever is created to webpack.config.js
 
+Package.json
+![ACS]({{site.baseurl}}/assets/Blogs/ACSIntegration/ACSBlog (2).png)
 
 Create a webpack.config.js file in your project root.  This is where we configure our bundling.
+![ACS]({{site.baseurl}}/assets/Blogs/ACSIntegration/ACSBlog (3).png)
 
 I have modified my webpack.config.js to read:  
+
+![ACS]({{site.baseurl}}/assets/Blogs/ACSIntegration/ACSBlog (5).png)
 
 My code for the video is in the “entry” setting (Index.js).  The output bundle will be in the Bundle.js file.  You should now be ready to create your first bundle.  
 Run the following command:  npx webpack-cli --config ./webpack.config.js –debug
@@ -101,6 +110,8 @@ You can now go look at the resulting bundle in your output directory.  You would
 
 ### Automating the Bundle
 Dropping to a command prompt every time you make a change to your index.js file would be painful.  Therefore, we will leverage the NPM Task Runner extension.  I created a before build task as shown below.
+
+![ACS]({{site.baseurl}}/assets/Blogs/ACSIntegration/ACSBlog (6).png)
 
 ## Summary
 I know there is a lot of information in this article, and probably a few inaccuracies but the goal was to highlight the ability to add video calling to an application and get the SDK working in a ASP.Net Web Application.  I have also put the code that I used in this example in a Github Repo.
