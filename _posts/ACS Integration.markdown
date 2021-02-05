@@ -16,7 +16,7 @@ In this article we’ll focus on the video calling service and walk you through 
 ## Getting Started
 The first thing you will need to do is spin up an ACS instance in Azure.
 
-![ACS]({{site.baseurl}}/_posts/WINWORD_jfneGFB6zs.png)
+![ACS]({{site.baseurl}}/assets/Blogs/ACSIntegration/WINWORD_jfneGFB6zs.png)
 
 Once you create the service, you will minimally need to setup your usage keys (primarily the connection string).  So now we’re ready to roll!
 
