@@ -1,12 +1,17 @@
 ---
 layout: post
-title:  "Integrating Video into your Applications with Azure Communication Services"
-date:   2021-2-4 21:03:36 +0530
+title: Integrating Video into your Applications with Azure Communication Services
+date: '2021-2-4 21:03:36 +0530'
 categories: ACS ASP.NET
+published: true
 ---
 
-#Integrating Video into your Applications with Azure Communication Services
-##Background
+#
+
+Integrating Video into your Applications with Azure Communication Services
+##
+
+Background
 I’ve done a lot of work with customers a couple of years ago promoting remote advisor scenarios utilizing API’s from the Skype for Business group.  I was working with healthcare companies experimenting with Telemedicine solutions and other types of “remote advisor” scenarios such as premier financial service advisors.  The team was in full speed ahead mode when it was abruptly announced that Skype for Business was getting merged into Microsoft Teams.  This halted the completion of a lot of the work we were doing at the time.  The truth be told, integrating these scenarios as stock solutions created complexities in the applications as the dependency for Skype for Business was required.  
 Fast forward to 2021.  Microsoft announced a new service: .  Azure Communication Services. It provides Chat, Telephony, SMS, Voice, and Video calling  exposing these through JavaScript, iOS and Android SDK.  
 
