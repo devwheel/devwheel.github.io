@@ -18,7 +18,11 @@ Once you create the service, you will minimally need to setup your usage keys (p
 
 ## Now the Code
 This sample is based on the .Net Framework vs .Net Core as there are some samples that utilize .Net Core out there and it is my belief that there is still a lot of .Net Framework web applications out there that could easily use this article as a recipe for integration.
+
 The illustration below documents the settings that I used to create the .Net Web Application.  Note that I added Web API to the solution.  
+
+
+![ACS]({{site.baseurl}}/assets/Blogs/ACSIntegration/CreateApp.png)
 
 ## Authentication
 ACS allows you to create identities and manage your access tokens.  The identities created do not contain any PII data so you would typically map that identity as a property of your application’s identity solution.  For a real “quick start” there is a nice sample that implements this in an Azure function.  We will go ahead and implement it as part of our solution so we will need a web API to do this. 
@@ -29,9 +33,9 @@ The returned tokenResponse will have a structure like:
 
 
     {
-    "//Token"//: "//[The Token]//",
-    "//User"//: "//[the ACS User]//",
-    "//ExpiresOn"//: "2021-01-08T03:40:02.5492449+00:00"//
+    "Token": "[The Token]",
+    "User": "[the ACS User]",
+    "ExpiresOn": "2021-01-08T03:40:02.5492449+00:00"
     }
 
 
