@@ -17,23 +17,5 @@ In this article we’ll focus on the video calling service and walk you through 
 
 The first thing you will need to do is spin up an ACS instance in Azure.
 
-![]({{site.baseurl}}/_posts/WINWORD_jfneGFB6zs.png)
-
-Once you create the service, you will minimally need to setup your usage keys (primarily the connection string).  So now we’re ready to roll!!
-
-## Now the Code
-
-This sample is based on the e .Net Framework vs .Net Core as there are some samples that utilize .Net Core out there and it is my belief that there is still a lot of .Net Framework web applications out there that could easily use this article as a recipe for integration.
-The illustration below documents the settings that I used to create the .Net Web Application.  Note that I added Web API to the solution.  
-
-![ACSBlog (4).png]({{site.baseurl}}/_posts/ACSBlog (4).png)
-
-We also need to add nuget packages to support the project:
-- Install-Package Azure.Communication.Common -Version 1.0.0-beta.3
-- Install-Package Azure.Communication.Administration -Version 1.0.0-beta.3
-
-
-
-
-
+![ACS]({{site.baseurl}}/_posts/WINWORD_jfneGFB6zs.png)
 
